@@ -5,6 +5,12 @@ const conField = document.getElementById("constitutionField");
 const intField = document.getElementById("intelligenceField");
 const wisField = document.getElementById("wisdomField");
 const chaField = document.getElementById("charismaField");
+const strMod = document.getElementById("strengthMod");
+const dexMod = document.getElementById("dexterityMod");
+const conMod = document.getElementById("constitutionMod");
+const intMod = document.getElementById("intelligenceMod");
+const wisMod = document.getElementById("wisdomMod");
+const chaMod = document.getElementById("charismaMod");
 
 function generateChar() {
   var newChar = new Character();
@@ -14,7 +20,12 @@ function generateChar() {
   intField.value = newChar.intelligence;
   wisField.value = newChar.wisdom;
   chaField.value = newChar.charisma;
-
+  strMod.value = abilityModifier(newChar.strength);
+  dexMod.value = abilityModifier(newChar.dexterity);
+  conMod.value = abilityModifier(newChar.constitution);
+  intMod.value = abilityModifier(newChar.intelligence);
+  wisMod.value = abilityModifier(newChar.wisdom);
+  chaMod.value = abilityModifier(newChar.charisma);
 }
 
 function abilityModifier(abilityScore) {

@@ -2,6 +2,7 @@ body {
     background-color: lightsteelblue;
     font-family: 'Franklin Gothic Medium', Helvetica, Arial, sans-serif;
     letter-spacing: 0.075em;
+    color: rgba(0,0,0,.75);
 }
 
 main {
@@ -25,21 +26,51 @@ fieldset {
 label {
     width: 9em;
     display: inline-block;
+    margin-left: 5em;
 }
 
 input {
-    width: 2.4em;
+    width: 2em;
     background-color: lightgreen;
     border-style: solid;
     border-color: darkgreen;
     font-size: 1.2em;
     text-align: center;
+    opacity: 0.6;
 }
 
 button {
+    display: block;
     border-radius: 10px;
     border: none;
     text-align: center;
     padding: 0.25em 1em;
     margin: auto;
+}
+
+
+form {
+    content: "";
+    opacity: 0.95;
+    background: url('../images/old-parchment.jpg');
+    margin: auto;
+    padding: 10%;
+}
+
+.modifier {
+    background: goldenrod;
+    border-color: darkgoldenrod;
+}
+
+
+
+@media only screen and (min-width: 875px)
+{
+    main {
+        width: 50%;
+    }
+
+    label {
+        margin-left: 25%;
+    }
 }
