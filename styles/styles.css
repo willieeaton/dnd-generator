@@ -1,0 +1,45 @@
+body {
+    background-color: lightsteelblue;
+    font-family: 'Franklin Gothic Medium', Helvetica, Arial, sans-serif;
+    letter-spacing: 0.075em;
+}
+
+main {
+    background-color: lightsteelblue;
+    width: 80%;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    letter-spacing: 0.15em;
+
+}
+
+fieldset {
+    display: block;
+    border: none;
+    padding: 10px;
+}
+
+label {
+    width: 9em;
+    display: inline-block;
+}
+
+input {
+    width: 2.4em;
+    background-color: lightgreen;
+    border-style: solid;
+    border-color: darkgreen;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+button {
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    padding: 0.25em 1em;
+    margin: auto;
+}

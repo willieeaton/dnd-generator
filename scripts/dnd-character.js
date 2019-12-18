@@ -1,6 +1,23 @@
+const genButton = document.getElementById("generateButton");
+const strField = document.getElementById("strengthField");
+const dexField = document.getElementById("dexterityField");
+const conField = document.getElementById("constitutionField");
+const intField = document.getElementById("intelligenceField");
+const wisField = document.getElementById("wisdomField");
+const chaField = document.getElementById("charismaField");
 
-export function abilityModifier(abilityScore)
-{
+function generateChar() {
+  var newChar = new Character();
+  strField.value = newChar.strength;
+  dexField.value = newChar.dexterity;
+  conField.value = newChar.constitution;
+  intField.value = newChar.intelligence;
+  wisField.value = newChar.wisdom;
+  chaField.value = newChar.charisma;
+
+}
+
+function abilityModifier(abilityScore) {
   if (abilityScore < 3)  {
     throw('Ability scores must be at least 3');
   } 
@@ -13,7 +30,7 @@ export function abilityModifier(abilityScore)
   }
 }
 
-export class Character {
+class Character {
 
   constructor ()
   {
@@ -41,3 +58,5 @@ export class Character {
     return value;
   }
 };
+
+genButton.addEventListener("click", generateChar);

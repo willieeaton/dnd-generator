@@ -1,9 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="style-sheet" href = "/styles/styles.css" />
+    <link rel="stylesheet" type ="text/css" href="styles/styles.css" />
 </head>
 <body>
-    <h2>D&D Random Character Generator</h2>
+    <header>
+        <h2>D&D Random Character Generator</h2>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <label for="strengthField">Strength:</label>
+                <input type="text" name="strengthField" id="strengthField">
+            </fieldset>
+            <fieldset>
+                <label for="dexterityField">Dexterity:</label>
+                <input type="text" name="dexterityField" id="dexterityField">
+            </fieldset>
+            <fieldset>
+                <label for="constitutionField">Constitution:</label>
+                <input type="text" name="constitutionField" id="constitutionField">
+            </fieldset>
+            <fieldset>
+                <label for="intelligenceField">Intelligence:</label>
+                <input type="text" name="intelligenceField" id="intelligenceField">
+            </fieldset>
+            <fieldset>
+                <label for="wisdomField">Wisdom:</label>
+                <input type="text" name="wisdomField" id="wisdomField">
+            </fieldset>
+            <fieldset>
+                <label for="charismaField">Charisma:</label>
+                <input type="text" name="charismaField" id="charismaField">
+            </fieldset>
+            <fieldset>
+                <button type="button" id="generateButton">Generate!</button>
+            </fieldset>
+        </form>
+        <footer>
+        </footer>
+    </main>
+
+    <script src="scripts/dnd-character.js"></script>
 </body>
 </html>
